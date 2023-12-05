@@ -14,11 +14,13 @@
     }
 
     // === logo change
+    /*
     if (ud_header.classList.contains("sticky")) {
-      logo.src = "assets/images/logo/logo-2.svg";
+      logo.src = "images/logo/logo-2.svg";
     } else {
-      logo.src = "assets/images/logo/logo.svg";
+      logo.src = "images/logo/logo.svg";
     }
+    */
 
     // show or hide the back-top-top button
     const backToTop = document.querySelector(".back-to-top");

@@ -1,0 +1,141 @@
+<header class="ud-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-expand-lg">
+          <div data-v-component-site>
+            <a class="navbar-brand" href="index.html" data-v-url-params='{"host":"www.*.*"}'>
+              <img src="images/logo/logo.svg" loading="lazy" alt="logo" data-v-site-logo>
+              <img src="img/logo.png" loading="lazy" class="logo-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-sticky>
+              <img src="img/logo-white.png" loading="lazy" class="logo-default-dark logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark>
+              <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark-sticky>
+            </a>
+          </div>
+          <button class="navbar-toggler">
+            <span class="toggler-icon"> </span>
+            <span class="toggler-icon"> </span>
+            <span class="toggler-icon"> </span>
+          </button>
+
+          <div class="navbar-collapse" data-v-component-menu="header" data-v-slug="main-menu">
+            <ul id="nav" class="navbar-nav mx-auto" data-v-menu-items>
+              <li class="nav-item" data-v-menu-item data-v-class-if-nav-item-has-children="category.children > 0">
+
+                <a class="ud-submenu-link" href="#" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Resources</span>
+                </a>
+
+                <div class="ud-submenu" data-v-menu-item-recursive>
+                  <div data-v-menu-item class="ud-submenu-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                    <a class="ud-submenu-link" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                      <span data-v-menu-item-name>User Documentation</span>
+                    </a>
+                  </div>
+                  <div data-v-menu-item class="ud-submenu-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                    <a class="ud-submenu-link" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                      <span data-v-menu-item-name>Developer Documentation</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item" data-v-menu-item>
+                <a class="ud-submenu-link" href="https://blog.vvveb.com" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Blog</span>
+                </a>
+              </li>
+              <li class="nav-item" data-v-menu-item>
+                <a class="ud-submenu-link" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Contact</span>
+                </a>
+              </li>
+
+              <li class="nav-item" data-v-menu-item>
+                <a class="ud-submenu-link" href="index.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Home</span>
+                </a>
+              </li>
+              <li class="nav-item" data-v-menu-item>
+                <a class="ud-submenu-link" href="about.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>About</span>
+                </a>
+              </li>
+              <li class="nav-item" data-v-menu-item>
+                <a class="ud-submenu-link" href="contact.html" data-v-menu-item-url>
+                  <span data-v-menu-item-name>Contact</span>
+                </a>
+              </li>
+
+            </ul>
+            <!--
+			<ul id="nav" class="navbar-nav mx-auto">
+			  <li class="nav-item">
+				<a class="ud-menu-scroll" href="#home">Home</a>
+			  </li>
+
+			  <li class="nav-item">
+				<a class="ud-menu-scroll" href="#about">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="ud-menu-scroll" href="#pricing">Pricing</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="ud-menu-scroll" href="#team">Team</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="ud-menu-scroll" href="#contact">Contact</a>
+			  </li>
+			  <li class="nav-item nav-item-has-children">
+				<a href="javascript:void(0)"> Pages </a>
+				<ul class="ud-submenu">
+				  <li class="ud-submenu-item">
+					<a href="about.html" class="ud-submenu-link">
+					  About Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="pricing.html" class="ud-submenu-link">
+					  Pricing Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="contact.html" class="ud-submenu-link">
+					  Contact Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="blog.html" class="ud-submenu-link">
+					  Blog Grid Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="blog-details.html" class="ud-submenu-link">
+					  Blog Details Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="login.html" class="ud-submenu-link">
+					  Sign In Page
+					</a>
+				  </li>
+				  <li class="ud-submenu-item">
+					<a href="404.html" class="ud-submenu-link">404 Page</a>
+				  </li>
+				</ul>
+			  </li>
+			</ul>
+-->
+          </div>
+
+          <div class="navbar-btn d-none d-sm-inline-block">
+            <a href="login.html" data-v-url="user/login/index" class="ud-main-btn ud-login-btn">
+              Sign In
+            </a>
+            <a class="ud-main-btn ud-white-btn" data-v-url="user/signup/index" href="javascript:void(0)">
+              Sign Up
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

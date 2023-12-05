@@ -1,0 +1,140 @@
+<section id="contact" class="ud-contact">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-xl-8 col-lg-7">
+        <div class="ud-contact-content-wrapper">
+          <div class="ud-contact-title">
+            <span>CONTACT US</span>
+            <h2>
+              Let’s talk about
+              <br />
+              Love to hear from you!
+            </h2>
+          </div>
+          <div class="ud-contact-info-wrapper">
+            <div class="ud-single-info">
+              <div class="ud-info-icon">
+                <i class="lni lni-map-marker"></i>
+              </div>
+              <div class="ud-info-meta">
+                <h5>Our Location</h5>
+                <p>401 Broadway, 24th Floor, Orchard Cloud View, London</p>
+              </div>
+            </div>
+            <div class="ud-single-info">
+              <div class="ud-info-icon">
+                <i class="lni lni-envelope"></i>
+              </div>
+              <div class="ud-info-meta">
+                <h5>How Can We Help?</h5>
+                <p>info@yourdomain.com</p>
+                <p>contact@yourdomain.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-lg-5" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us-page">
+        <div class="ud-contact-form-wrapper wow fadeInUp" data-wow-delay=".2s">
+          <h3 class="ud-contact-form-title">Send us a Message</h3>
+
+          <div class="notifications" data-v-notifications>
+
+            <div class="alert alert-danger d-flex alert-dismissable" role="alert" data-v-notification-error>
+
+              <div class="icon align-middle me-2">
+                <i class="align-middle la la-2x lh-1 la-exclamation-triangle"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center text-small">
+                <div>
+                  <div data-v-notification-text>
+                    This is a placeholder for a notification message.
+                  </div>
+                </div>
+              </div>
+
+
+              <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <!-- <i class="la la-times"></i> -->
+                </span>
+              </button>
+            </div>
+
+            <div class="alert alert-success d-flex  alert-dismissable d-flex" role="alert" data-v-notification-success>
+
+              <div class="icon align-middle me-2">
+                <i class="align-middle la la-2x lh-1 la-check-circle"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center align-middle" data-v-notification-text>
+                This is a placeholder for a success message.
+              </div>
+
+              <button type="button" class="btn-close align-middle" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <!-- <i class="la la-times"></i> -->
+                </span>
+              </button>
+            </div>
+
+            <div class="alert alert-primary d-flex alert-dismissable d-flex" role="alert" data-v-notification-info>
+
+              <div class="icon align-middle me-2">
+                <i class="align-middle la la-2x lh-1  la-info-circle"></i>
+              </div>
+
+              <div class="flex-grow-1 align-self-center" data-v-notification-text>
+                This is a placeholder for a info message.
+              </div>
+
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">
+                  <!-- <i class="la la-times"></i> -->
+                </span>
+              </button>
+            </div>
+
+          </div>
+
+          <form class="ud-contact-form" method="post">
+            <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+
+            <div class="ud-form-group">
+              <label for="name">Full Name*</label>
+              <input type="text" name="name" placeholder="Adam Gelius" required />
+            </div>
+            <div class="ud-form-group">
+              <label for="email">Email*</label>
+              <input type="email" name="email" placeholder="example@yourmail.com" required />
+            </div>
+            <div class="ud-form-group">
+              <label for="phone">Phone*</label>
+              <input type="text" name="phone" placeholder="+885 1254 5211 552" required />
+            </div>
+            <div class="ud-form-group">
+              <label for="message">Message*</label>
+              <textarea name="message" rows="1" placeholder="type your message here" required></textarea>
+            </div>
+
+            <!-- if these hidden inputs are filled then ignore, robots -->
+
+            <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form">
+
+            <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+            <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+
+            <div class="ud-form-group mb-0">
+              <button type="submit" class="ud-main-btn">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
