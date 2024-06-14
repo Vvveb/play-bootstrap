@@ -1946,3 +1946,11 @@ div.sticky .logo-dark {
         transition: opacity 0.5s cubic-bezier(0.19, 1, 0.22, 1), transform 0.5s cubic-bezier(0.19, 1, 0.22, 1); }
       .nav-item.dropdown .dropdown-toggle + .dropdown-menu .dropdown-item {
         padding: .7rem 2.5rem; } }
+
+body {
+  max-width: 1140px;
+  margin: 1rem auto; }
+
+audio, video {
+  max-width: 100%;
+  width: 100%; }

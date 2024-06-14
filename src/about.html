@@ -18,17 +18,16 @@
       </div>
     </section>
 
-	@@include('sections/play-bootstrap/about.html')
-	@@include('sections/play-bootstrap/team.html')
 
     <section id="about" class="ud-about">
       <div class="container">
         <div class="ud-about-wrapper wow fadeInUp" data-wow-delay=".2s">
           <div class="ud-about-content-wrapper">
-            <div class="ud-about-content">
+            <div class="ud-about-content" data-v-component-post>
               <span class="tag">About Us</span>
-              <h2>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
-              <p>
+              <h2 data-v-post-name>Brilliant Toolkit to Build Nextgen Website Faster.</h2>
+              <div data-v-post-content>
+              <p>asd
                 The main ‘thrust’ is to focus on educating attendees on how to
                 best protect highly vulnerable business applications with
                 interactive panel discussions and roundtables led by subject
@@ -41,6 +40,7 @@
                 interactive panel.
               </p>
               <a href="javascript:void(0)" class="ud-main-btn">Learn More</a>
+              </div>
             </div>
           </div>
           <div class="ud-about-image">
@@ -49,6 +49,8 @@
         </div>
       </div>
     </section>
+    
+   	@@include('sections/play-bootstrap/team.html')
 
 	@@include('sections/play-bootstrap/footer.html')
 

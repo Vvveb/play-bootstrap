@@ -28,9 +28,9 @@
             <div data-v-component-site>
               <a class="navbar-brand" href="index.html" data-v-url-params='{"host":"www.*.*"}'>
                 <img src="images/logo/logo.svg" loading="lazy" alt="logo" data-v-site-logo>
-                <img src="img/logo.png" loading="lazy" class="logo-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-sticky>
-                <img src="img/logo-white.png" loading="lazy" class="logo-default-dark logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark>
-                <img src="img/logo-white.png" loading="lazy" class="logo-default-dark-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark-sticky>
+                <img src="img/logo.png" alt="Site logo" loading="lazy" class="logo-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-sticky>
+                <img src="img/logo-white.png" alt="logo" loading="lazy" class="logo-default-dark logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark>
+                <img src="img/logo-white.png" alt="logo" loading="lazy" class="logo-default-dark-sticky logo-main" src="images/logo.svg" alt="logo" data-v-site-logo-dark-sticky>
               </a>
             </div>
             <button class="navbar-toggler">
@@ -41,54 +41,51 @@
 
             <div class="navbar-collapse" data-v-component-menu="header" data-v-slug="main-menu">
               <ul id="nav" class="navbar-nav mx-auto" data-v-menu-items>
-                <li class="nav-item" data-v-menu-item data-v-class-if-nav-item-has-children="category.children > 0">
 
-                  <a class="ud-submenu-link" href="#" aria-haspopup="true" aria-expanded="false" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Resources</span>
+                <li class="nav-item position-static" data-v-menu-item data-v-class-if-nav-item-has-children="category.children > 0" data-v-class-if-position-static="category.has-text">
+
+                  <a class="nav-link" href="#" aria-expanded="false" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                    <span data-v-menu-item-content>
+                      <p>
+                        <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                      </p>
+                    </span>
                   </a>
 
                   <div class="ud-submenu" data-v-menu-item-recursive>
-                    <div data-v-menu-item class="ud-submenu-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                    <div data-v-menu-item class="ud-submenu-item" data-v-class-if-dropdown="category.children > 0">
                       <a class="ud-submenu-link" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                        <span data-v-menu-item-name>User Documentation</span>
+                        <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                        <span data-v-menu-item-content>
+                          <div class="row">
+                            <div class="col-6 align-self-center">
+                              <img src="/media/posts/4.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                            </div>
+                            <div class="col-6">
+                              <h4>Features</h4>
+                              <p class="text-muted">Just a few mentions, but there is more</p>
+                              <ul class="list-unstyled">
+                                <li class="text-primary">Page builder</li>
+                                <li class="text-primary">Mega menu</li>
+                                <li class="text-primary">Multi language</li>
+                                <li class="text-primary">Advanced SEO</li>
+                                <li class="text-primary">Ecommerce</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </span>
                       </a>
                     </div>
-                    <div data-v-menu-item class="ud-submenu-item" data-v-menu-item data-v-class-if-dropdown="category.children > 0">
+                    <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
                       <a class="ud-submenu-link" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
-                        <span data-v-menu-item-name>Developer Documentation</span>
+                        <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                        <span data-v-menu-item-content></span>
                       </a>
                     </div>
                   </div>
                 </li>
-                <li class="nav-item" data-v-menu-item>
-                  <a class="ud-submenu-link" href="https://blog.vvveb.com" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Blog</span>
-                  </a>
-                </li>
-                <li class="nav-item" data-v-menu-item>
-                  <a class="ud-submenu-link" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Contact</span>
-                  </a>
-                </li>
-
-                <li class="nav-item" data-v-menu-item>
-                  <a class="ud-submenu-link" href="index.html" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Home</span>
-                  </a>
-                </li>
-                <li class="nav-item" data-v-menu-item>
-                  <a class="ud-submenu-link" href="about.html" data-v-menu-item-url>
-                    <span data-v-menu-item-name>About</span>
-                  </a>
-                </li>
-                <li class="nav-item" data-v-menu-item>
-                  <a class="ud-submenu-link" href="contact.html" data-v-menu-item-url>
-                    <span data-v-menu-item-name>Contact</span>
-                  </a>
-                </li>
-
-              </ul>
-              <!--
+                <!--
 			<ul id="nav" class="navbar-nav mx-auto">
 			  <li class="nav-item">
 				<a class="ud-menu-scroll" href="#home">Home</a>
@@ -147,6 +144,7 @@
 			</ul>
 -->
             </div>
+
 
             <div class="navbar-btn d-none d-sm-inline-block">
               <a href="login.html" data-v-url="user/login/index" class="ud-main-btn ud-login-btn">
@@ -503,6 +501,11 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
+
+  <!-- Vvveb Ajax Common Js -->
+  <script src="../../js/jquery.min.js"></script>
+  <script id="app-js" src="../../js/app.js"></script>
+
   <script>
   // ==== for menu scroll
   const pageLink = document.querySelectorAll(".ud-menu-scroll");

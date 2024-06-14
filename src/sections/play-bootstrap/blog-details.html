@@ -1,4 +1,4 @@
-<section class="ud-blog-details">
+<section class="ud-blog-details" data-v-component-post="post">
   <div class="container">
 	<div class="row">
 	  <div class="col-lg-12">
@@ -6,26 +6,29 @@
 		  <img
 			src="images/blog/blog-details-01.jpg"
 			alt="blog details"
+			data-aos="zoom-in-up" data-aos-duration="500" loading="lazy" data-v-post-image data-v-if="post.image"
 		  />
 		  <div class="ud-blog-overlay">
 			<div class="ud-blog-overlay-content">
 			  <div class="ud-blog-author">
-				<img src="images/blog/author-01.png" alt="author" />
+				<img src="images/blog/author-01.png" alt="author" data-v-post-avatar/>
 				<span>
-				  By <a href="javascript:void(0)"> Samuyl Joshi </a>
+				  By <a href="javascript:void(0)" data-v-post-author-url><span data-v-post-display_name> Samuyl Joshi </span></a>	
 				</span>
 			  </div>
 
 			  <div class="ud-blog-meta">
 				<p class="date">
-				  <i class="lni lni-calendar"></i> <span>12 Jan 2024</span>
+				  <i class="lni lni-calendar"></i> <span data-v-post-created_at data-filter-friendly_date>12 Jan 2024</span>
 				</p>
 				<p class="comment">
-				  <i class="lni lni-comments"></i> <span>50</span>
+				  <i class="lni lni-comments"></i> <span data-v-post-comment_text>50</span>
 				</p>
+				<!--
 				<p class="view">
 				  <i class="lni lni-eye"></i> <span>35</span>
 				</p>
+				-->
 			  </div>
 			</div>
 		  </div>
@@ -34,9 +37,10 @@
 
 	  <div class="col-lg-8">
 		<div class="ud-blog-details-content">
-		  <h2 class="ud-blog-details-title">
+		  <h2 class="ud-blog-details-title" data-v-post-name>
 			Facing a challenge is kind of a turn-on for an easy rider
 		  </h2>
+		  <div data-v-post-content>
 		  <p class="ud-blog-details-para">
 			There’s a time and place for everything… including asking for
 			reviews. For instance: you should not asking for a review on
@@ -91,7 +95,8 @@
 			interpretaris eu sit, eum viris impedit ne. Erant appareat
 			corrumpit ei vel.
 		  </p>
-
+		</div>
+		
 		  <div class="ud-blog-details-action">
 			<ul class="ud-blog-tags">
 			  <li>
@@ -126,6 +131,9 @@
 			</div>
 		  </div>
 		</div>
+	 
+		@@include('../../_includes/post-comments.html')
+	 
 	  </div>
 	  <div class="col-lg-4">
 		<div class="ud-blog-sidebar">
@@ -155,24 +163,25 @@
 
 		  <div class="ud-articles-box">
 			<h3 class="ud-articles-box-title">Popular Articles</h3>
-			<ul class="ud-articles-list">
-			  <li>
+			<ul class="ud-articles-list" data-v-component-posts="popular" data-v-limit="4" data-v-image_size="large">
+			  <li data-v-post>
 				<div class="ud-article-image">
 				  <img
 					src="images/blog/article-author-01.png"
 					alt="author"
+					data-v-post-image
 				  />
 				</div>
 				<div class="ud-article-content">
 				  <h5 class="ud-article-title">
-					<a href="javascript:void(0)">
-					  The 8 best landing page builders, reviewed
+					<a href="javascript:void(0)" data-v-post-url>
+					  <span data-v-post-name>The 8 best landing page builders, reviewed</span>
 					</a>
 				  </h5>
-				  <p class="ud-article-author">Martin Fedous</p>
+				  <p class="ud-article-author" data-v-post-display_name>Martin Fedous</p>
 				</div>
 			  </li>
-			  <li>
+			  <li data-v-post>
 				<div class="ud-article-image">
 				  <img
 					src="images/blog/article-author-02.png"
@@ -188,7 +197,7 @@
 				  <p class="ud-article-author">Glomiya Lucy</p>
 				</div>
 			  </li>
-			  <li>
+			  <li data-v-post>
 				<div class="ud-article-image">
 				  <img
 					src="images/blog/article-author-03.png"
@@ -204,7 +213,7 @@
 				  <p class="ud-article-author">Andrio jeson</p>
 				</div>
 			  </li>
-			  <li>
+			  <li data-v-post>
 				<div class="ud-article-image">
 				  <img
 					src="images/blog/article-author-04.png"

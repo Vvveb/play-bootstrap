@@ -1,0 +1,14 @@
+$max-width: 960px;
+
+@import "style";
+
+
+body {
+	max-width: 1140px;
+	margin:1rem auto;
+}
+
+audio, video {
+	max-width:100%;
+	width:100%;
+}

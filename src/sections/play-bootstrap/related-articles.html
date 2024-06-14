@@ -1,4 +1,4 @@
-<section class="ud-blog-grids ud-related-articles">
+<section class="ud-blog-grids ud-related-articles" data-v-component-posts="related" data-v-limit="3" data-v-image_size="large">
   <div class="container">
 	<div class="row col-lg-12">
 	  <div class="ud-related-title">
@@ -6,7 +6,10 @@
 	  </div>
 	</div>
 	<div class="row">
-	  <div class="col-lg-4 col-md-6">
+	  <div class="col-lg-4 col-md-6" data-v-post>
+		@@include('../../_includes/blog-list-item.html')	  
+	  </div>
+	  <div class="col-lg-4 col-md-6" data-v-post>
 		<div class="ud-single-blog">
 		  <div class="ud-blog-image">
 			<a href="blog-details.html">
@@ -27,7 +30,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-lg-4 col-md-6">
+	  <div class="col-lg-4 col-md-6" data-v-post>
 		<div class="ud-single-blog">
 		  <div class="ud-blog-image">
 			<a href="blog-details.html">
@@ -48,7 +51,7 @@
 		  </div>
 		</div>
 	  </div>
-	  <div class="col-lg-4 col-md-6">
+	  <div class="col-lg-4 col-md-6" data-v-post>
 		<div class="ud-single-blog">
 		  <div class="ud-blog-image">
 			<a href="blog-details.html">
